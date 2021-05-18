@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in {1..14}
+do
+	echo "In folder $i:"
+	ls images/trams/$i | wc -l
+done
+echo "In folder bad:"
+ls images/trams/bad | wc -l 
+echo "In folder other:"
+ls images/other | wc -l
